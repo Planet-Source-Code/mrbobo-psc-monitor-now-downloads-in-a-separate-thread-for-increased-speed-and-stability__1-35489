@@ -1,0 +1,5 @@
+The original version of this PSC Monitor used API to download the source code of a selected PSC web page and parsed this source code for specific data. It did this job well, but the application was unresponsive whilst downloading was taking place. 
+To overcome this problem it now uses a separate tiny exe file (BBdowner.exe - source code included) to download the data in a separate thread, thus allowing for multiple tasks being carried out simultaneously and allowing the app to be reponsive even during downloading.
+I hope you appreciate the increased stability and speed.
+
+Before running PSC Monitor, compile BBdowner.exe and place in the same folder as PSCMonitor.exe, thats all - easy!
